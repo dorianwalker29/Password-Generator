@@ -90,6 +90,7 @@ function generatePassword() {
   return finalPassword;
 };
 
+/*
 // Reference to the generate element
 var generateBtn = document.querySelector("#generate");
 
