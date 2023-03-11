@@ -1,6 +1,9 @@
 // Assignment Code
-// Have to assign which char will be available 
+// Reference to the generate element
 
+var generateBtn = document.querySelector("#generate");
+
+// Have to assign which character will be available 
 //Function to generate password, var for each character type
 
 function generatePassword() {
@@ -91,16 +94,13 @@ function generatePassword() {
 };
 
 
-// Reference to the generate element
-var generateBtn = document.querySelector("#generate");
-
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-}
+};
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
